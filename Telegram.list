@@ -29,6 +29,13 @@ DOMAIN-SUFFIX,tx.me
 DOMAIN-SUFFIX,usercontent.dev
 DOMAIN-KEYWORD,nicegram
 DOMAIN-KEYWORD,telegram
+#
+IP-CIDR,187.74.119.31/32,no-resolve
+IP-CIDR,96.19.85.2/32,no-resolve
+IP-CIDR,5.28.195.9/32,no-resolve
+IP-CIDR,6.16.0.64/32,no-resolve
+IP-CIDR,3.4.0.0/32,no-resolve
+#
 IP-CIDR,109.239.140.0/24,no-resolve
 IP-CIDR,149.154.160.0/20,no-resolve
 IP-CIDR,185.76.151.0/24,no-resolve
