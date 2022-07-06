@@ -117,14 +117,7 @@ rule-providers:
 
   ChinaIPs_IP:
     type: http
-    behavior: ipcidr
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaIPs/ChinaIPs_IP.yaml"
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaIPs/ChinaIPs_Classical.yaml"
     path: ./Ruleset/ChinaIPs_IP.yaml
-    interval: 172800
-
-  Lancidr:
-    type: http
-    behavior: ipcidr
-    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/lancidr.txt"
-    path: ./Ruleset/Lancidr.yaml
     interval: 172800
