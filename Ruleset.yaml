@@ -97,6 +97,6 @@ rule-providers:
   ProxyGFWlist:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list"
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ProxyGFWlist.yaml"
     path: ./Ruleset/ProxyGFWlist.yaml
     interval: 172800
