@@ -80,7 +80,7 @@ rule-providers:
     path: ./Ruleset/China.yaml
     interval: 172800
 
-  proxy:
+  Proxy:
     type: http
     behavior: domain
     url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/proxy.txt"
