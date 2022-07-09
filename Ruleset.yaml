@@ -31,6 +31,13 @@ rule-providers:
     path: ./Ruleset/FindMy.yaml
     interval: 172800
 
+  WeChat:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/WeChat/WeChat.yaml"
+    path: ./Ruleset/WeChat.yaml
+    interval: 172800
+    
   BiliBili:
     type: http
     behavior: classical
@@ -73,9 +80,9 @@ rule-providers:
     path: ./Ruleset/China.yaml
     interval: 172800
 
-  ProxyGFWlist:
+  proxy:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ProxyGFWlist.yaml"
-    path: ./Ruleset/ProxyGFWlist.yaml
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/proxy.txt"
+    path: ./Ruleset/proxy.yaml
     interval: 172800
