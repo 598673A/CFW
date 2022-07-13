@@ -93,3 +93,10 @@ rule-providers:
     url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/lancidr.txt"
     path: ./ruleset/Lancidr.yaml
     interval: 86400
+    
+  App:
+    type: http
+    behavior: classical
+    url: "http://127.0.0.1/App.yaml"
+    path: ./Ruleset/App.yaml
+    interval: 172800
