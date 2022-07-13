@@ -95,6 +95,8 @@ rule-providers:
     interval: 86400
     
   App:
-    type: file
-    path: ./ruleset/App.yaml
+    type: http
+    behavior: classical
+    url: "http://127.0.0.1/App.yaml"
+    path: ./Ruleset/App.yaml
     interval: 172800
