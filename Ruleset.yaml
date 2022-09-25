@@ -10,6 +10,13 @@ cfw-latency-url: http://www.gstatic.com/generate_204
 
 rule-providers:
 
+  App:
+    type: http
+    behavior: classical
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/598673A/CFW/main/App.yaml"
+    path: ./Ruleset/App.yaml
+    interval: 172800
+    
   Apple:
     type: http
     behavior: classical
