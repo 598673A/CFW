@@ -9,14 +9,7 @@ cfw-latency-timeout: 3000
 cfw-latency-url: http://www.gstatic.com/generate_204
 
 rule-providers:
-    
-  Private:
-    type: http
-    behavior: domain
-    url: "https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/private.txt"
-    path: ./ruleset/Private.yaml
-    interval: 172800
-    
+
   Apple:
     type: http
     behavior: classical
@@ -29,6 +22,13 @@ rule-providers:
     behavior: classical
     url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/SystemOTA/SystemOTA.yaml"
     path: ./Ruleset/SystemOTA.yaml
+    interval: 172800
+
+  Tencent:
+    type: http
+    behavior: classical
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Tencent/Tencent.yaml"
+    path: ./Ruleset/Tencent.yaml
     interval: 172800
 
   WeChat:
@@ -93,10 +93,3 @@ rule-providers:
     url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Global/Global_Domain.yaml"
     path: ./Ruleset/Global_Domain.yaml
     interval: 172800
-    
-  Lancidr:
-    type: http
-    behavior: ipcidr
-    url: "https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/lancidr.txt"
-    path: ./ruleset/Lancidr.yaml
-    interval: 86400
