@@ -10,13 +10,20 @@ cfw-latency-url: http://www.gstatic.com/generate_204
 
 rule-providers:
 
+  AdvertisingLite:
+    type: http
+    behavior: Classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AdvertisingLite/AdvertisingLite_Classical.yaml"
+    path: ./ruleset/AdvertisingLite.yaml
+    interval: 172800
+    
   Private:
     type: http
     behavior: domain
     url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/private.txt"
     path: ./ruleset/Private.yaml
-    interval: 86400
-
+    interval: 172800
+    
   Apple:
     type: http
     behavior: classical
