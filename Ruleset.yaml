@@ -79,11 +79,11 @@ rule-providers:
     path: ./Ruleset/China.yaml
     interval: 172800
     
-  reject:
+  Reject:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
-    path: ./ruleset/reject.yaml
+    path: ./ruleset/Reject.yaml
     interval: 172800
 
   icloud:
@@ -93,16 +93,16 @@ rule-providers:
     path: ./ruleset/icloud.yaml
     interval: 172800
 
-  apple:
+  Apple:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt"
-    path: ./ruleset/apple.yaml
+    path: ./ruleset/Apple.yaml
     interval: 172800
 
-  proxy:
+  Proxy:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt"
-    path: ./ruleset/proxy.yaml
+    path: ./ruleset/Proxy.yaml
     interval: 172800
