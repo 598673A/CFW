@@ -4,9 +4,15 @@ allow-lan: true
 mode: Rule
 log-level: info
 external-controller: '127.0.0.1:9090'
-
 cfw-latency-timeout: 3000
 cfw-latency-url: http://www.gstatic.com/generate_204
+dns:
+  default-nameserver:
+    - 223.5.5.5
+    - 114.114.114.114
+  nameserver:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
 
 rule-providers:
 
@@ -15,20 +21,6 @@ rule-providers:
     behavior: classical
     url: "https://ghproxy.com/https://raw.githubusercontent.com/598673A/CFW/main/App.yaml"
     path: ./Ruleset/App.yaml
-    interval: 172800
-    
-  Apple:
-    type: http
-    behavior: classical
-    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple.yaml"
-    path: ./Ruleset/Apple.yaml
-    interval: 172800
-    
-  SystemOTA:
-    type: http
-    behavior: classical
-    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/SystemOTA/SystemOTA.yaml"
-    path: ./Ruleset/SystemOTA.yaml
     interval: 172800
 
   Tencent:
@@ -87,16 +79,30 @@ rule-providers:
     path: ./Ruleset/China.yaml
     interval: 172800
     
-  Global:
+  reject:
     type: http
     behavior: domain
-    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Global/Global.yaml"
-    path: ./Ruleset/Global.yaml
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
+    path: ./ruleset/reject.yaml
     interval: 172800
 
-  Global_Domain:
+  icloud:
     type: http
     behavior: domain
-    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Global/Global_Domain.yaml"
-    path: ./Ruleset/Global_Domain.yaml
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt"
+    path: ./ruleset/icloud.yaml
+    interval: 172800
+
+  apple:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt"
+    path: ./ruleset/apple.yaml
+    interval: 172800
+
+  proxy:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt"
+    path: ./ruleset/proxy.yaml
     interval: 172800
