@@ -7,3 +7,5 @@ payload:
   - PROCESS-NAME,BaiduNetdisk_mac
   - PROCESS-NAME,aDrive
   - PROCESS-NAME,aDrive Helper
+  - DOMAIN-KEYWORD,thetvdb
+  - DOMAIN-KEYWORD,themoviedb
