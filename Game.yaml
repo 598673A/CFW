@@ -5,4 +5,5 @@ payload:
   - PROCESS-NAME,cpatch
   - PROCESS-NAME,Steam Helper
   - PROCESS-NAME,steam_osx
+  - PROCESS-NAME,EmbyServer
   
