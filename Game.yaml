@@ -6,4 +6,4 @@ payload:
   - PROCESS-NAME,Steam Helper
   - PROCESS-NAME,steam_osx
   - PROCESS-NAME,EmbyServer
-  
+  - PROCESS-NAME,jellyfin
