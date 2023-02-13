@@ -9,3 +9,4 @@ payload:
   - PROCESS-NAME,aDrive Helper
   - DOMAIN-KEYWORD,thetvdb
   - DOMAIN-KEYWORD,themoviedb
+  - DOMAIN-KEYWORD,tmdb
