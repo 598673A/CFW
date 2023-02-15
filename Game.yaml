@@ -7,4 +7,3 @@ payload:
   - PROCESS-NAME,steam_osx
   - PROCESS-NAME,EmbyServer
   - PROCESS-NAME,jellyfin
-  - PROCESS-NAME,metatube-server-darwin-amd64-v3
