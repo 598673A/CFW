@@ -91,7 +91,7 @@ rule-providers:
 
   Apple:
     type: http
-    behavior: classical
+    behavior: domain
     url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/apple.txt"
     path: ./ruleset/Apple.yaml
     interval: 172800
