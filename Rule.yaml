@@ -32,7 +32,6 @@ rule-providers:
     interval: 172800
 
   Google:
-    type: http
     behavior: "classical"
     type: file
     path: ./Ruleset/Google.yaml
