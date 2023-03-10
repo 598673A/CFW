@@ -95,33 +95,13 @@ rule-providers:
     url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Steam/Steam.yaml"
     path: ./ruleset/Steam.yaml
     interval: 172800
-    
-  Advertising:
-    type: http
-    behavior: domain
-    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Advertising/Advertising_Domain.yaml"
-    path: ./ruleset/Advertising.yaml
-    interval: 172800
-    
-   EasyPrivacy:
-    type: http
-    behavior: domain
-    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/EasyPrivacy/EasyPrivacy_Domain.txt"
-    path: ./ruleset/EasyPrivacy.yaml
-    interval: 172800
-    
-  AdGuardSDNSFilter:
-    type: http
-    behavior: domain
-    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.txt"
-    path: ./ruleset/AdGuardSDNSFilter.yaml
-    interval: 172800
-    
+
   PD:
     behavior: classical
     type: file
     path: ./ruleset/PD.yaml
     interval: 0
+
   PP:
     behavior: classical
     type: file
