@@ -102,6 +102,13 @@ rule-providers:
     url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Steam/Steam.yaml"
     path: ./ruleset/Steam.yaml
     interval: 172800
+
+  ADreject:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
+    path: ./ruleset/ADreject.yaml
+    interval: 172800
     
   PD:
     behavior: classical
