@@ -15,7 +15,10 @@ dns:
     - 1.1.1.1
   nameserver:
     - https://223.5.5.5/dns-query
+    - https://1.12.12.12/dns-query
+  fallback:
     - https://1.0.0.1/dns-query
+    - https://208.67.222.222/dns-query
     
 rule-providers:
 
@@ -61,13 +64,6 @@ rule-providers:
     path: ./Ruleset/China.yaml
     interval: 172800
 
-  ChinaIPs:
-    type: http
-    behavior: ipcidr
-    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaIPs/ChinaIPs_IP.yaml"
-    path: ./Ruleset/ChinaIPs.yaml
-    interval: 172800
-    
   Apple:
     type: http
     behavior: domain
