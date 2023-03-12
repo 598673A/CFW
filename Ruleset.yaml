@@ -99,20 +99,20 @@ rule-providers:
     path: ./ruleset/Steam.yaml
     interval: 172800
 
-  AD:
+  ADReject:
     type: file
     behavior: domain
-    path: ./ruleset/AD.yaml
+    path: ./ruleset/ADReject.yaml
     interval: 0
     
-  PD:
+  PrivateDirect:
     behavior: classical
     type: file
-    path: ./ruleset/PD.yaml
+    path: ./ruleset/PrivateDirect.yaml
     interval: 0
 
-  PP:
+  PrivateProxy:
     behavior: classical
     type: file
-    path: ./ruleset/PP.yaml
+    path: ./ruleset/PrivateProxy.yaml
     interval: 0
