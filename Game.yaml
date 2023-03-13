@@ -1,9 +1,0 @@
-payload:
-  - PROCESS-NAME,Paradox Launcher Helper
-  - PROCESS-NAME,Paradox Launcher
-  - PROCESS-NAME,Cities
-  - PROCESS-NAME,cpatch
-  - PROCESS-NAME,Steam Helper
-  - PROCESS-NAME,steam_osx
-  - PROCESS-NAME,EmbyServer
-  - PROCESS-NAME,jellyfin
