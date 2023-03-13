@@ -114,17 +114,17 @@ rule-providers:
   ADReject:
     type: file
     behavior: domain
-    path: ./ruleset/ADReject.yaml
+    path: ./providers/rule/ADReject.yaml
     interval: 0
     
   PrivateDirect:
     behavior: classical
     type: file
-    path: ./ruleset/PrivateDirect.yaml
+    path: ./providers/rule/PrivateDirect.yaml
     interval: 0
 
   PrivateProxy:
     behavior: classical
     type: file
-    path: ./ruleset/PrivateProxy.yaml
+    path: ./providers/rule/PrivateProxy.yaml
     interval: 0
