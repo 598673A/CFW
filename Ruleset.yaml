@@ -1,5 +1,4 @@
-port: 7890
-socks-port: 7891
+mixed-port: 7890
 allow-lan: false
 mode: Rule
 log-level: info
@@ -7,7 +6,7 @@ ipv6: true
 external-controller: 127.0.0.1:9090
 
 dns:
-  enable: true
+  enable: false
   listen: 0.0.0.0:53
   ipv6: true
   default-nameserver:
