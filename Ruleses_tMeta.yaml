@@ -1,0 +1,19 @@
+sniffer:
+  enable: true
+  sniffing:
+  - tls
+  - http
+  
+rule-providers:
+    
+  PrivateDirect:
+    behavior: classical
+    type: file
+    path: ./ruleset/PrivateDirect.yaml
+    interval: 0
+
+  PrivateProxy:
+    behavior: classical
+    type: file
+    path: ./ruleset/PrivateProxy.yaml
+    interval: 0
