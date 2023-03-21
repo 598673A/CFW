@@ -27,8 +27,8 @@ dns:
       - tls://1.12.12.12:853
       - tls://223.5.5.5:853
   nameserver:
-    - quic://anycast.dns.nextdns.io
     - https://8.8.8.8/dns-query
     - https://208.67.222.222/dns-query
-  
-;rule-providers:
+  proxy-server-nameserver:
+    - https://8.8.4.4/dns-query
+    - https://208.67.220.220/dns-query
