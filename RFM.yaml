@@ -80,11 +80,11 @@ rule-providers:
   PrivateDirect:
     behavior: classical
     type: file
-    path: ./providers/rule/PrivateDirect.yaml
+    path: ./ruleset/PrivateDirect.yaml
     interval: 0
 
   PrivateProxy:
     behavior: classical
     type: file
-    path: ./providers/rule/PrivateProxy.yaml
+    path: ./ruleset/PrivateProxy.yaml
     interval: 0
