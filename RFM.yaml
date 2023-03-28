@@ -1,5 +1,11 @@
 rule-providers:
-
+  Advertising:
+    type: http
+    behavior: domain
+    url: "https://anti-ad.net/domains.txt"
+    path: ./Ruleset/Advertising.yaml
+    interval: 172800
+    
   Apple:
     type: http
     behavior: classical
